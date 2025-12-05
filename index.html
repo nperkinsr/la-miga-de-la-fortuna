@@ -19,26 +19,34 @@
 </head>
 
 <body>
+  <div class="page-wrapper">
+    <div class="container">
 
-  <div class="container">
-
-    <header>
-      <img src="./assets/fortune.jpg" alt="Galleta de la fortuna">
-      <h1>La miga de la fortuna</h1>
-    </header>
-    <main>
-      <p id="fortune-prediction">
-        <span class="loading-text">Cargando</span>
-      </p>
-      <div class="lucky-numbers-area">
-        <h3>Tus números de la suerte:</h3>
-        <p id="lucky-numbers">
+      <header>
+        <img src="./assets/fortune.jpg" alt="Galleta de la fortuna">
+        <h1>La miga de la fortuna</h1>
+      </header>
+      <main>
+        <p id="fortune-prediction">
           <span class="loading-text">Cargando</span>
         </p>
-      </div>
-    </main>
+        <div class="lucky-numbers-area">
+          <h3>Tus números de la suerte:</h3>
+          <p id="lucky-numbers">
+            <span class="loading-text">Cargando</span>
+          </p>
+        </div>
+      </main>
+    </div>
   </div>
 
+  <script>
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        window.scrollTo(0, 50);
+      }, 50);
+    });
+  </script>
   <script src="./scripts.js"></script>
 </body>
 
